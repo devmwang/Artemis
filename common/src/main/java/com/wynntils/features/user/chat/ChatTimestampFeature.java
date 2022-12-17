@@ -2,11 +2,13 @@
  * Copyright © Wynntils 2022.
  * This file is released under AGPLv3. See LICENSE for full license details.
  */
-package com.wynntils.features.user;
+package com.wynntils.features.user.chat;
 
 import com.wynntils.core.config.Config;
 import com.wynntils.core.config.ConfigHolder;
 import com.wynntils.core.features.UserFeature;
+import com.wynntils.core.features.properties.FeatureCategory;
+import com.wynntils.core.features.properties.FeatureInfo;
 import com.wynntils.core.managers.Model;
 import com.wynntils.core.managers.Models;
 import com.wynntils.mc.utils.McUtils;
@@ -22,6 +24,7 @@ import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
+@FeatureInfo(category = FeatureCategory.CHAT)
 public class ChatTimestampFeature extends UserFeature {
     @Config
     public String formatPattern = "HH:mm:ss";

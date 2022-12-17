@@ -8,6 +8,7 @@ import java.util.Locale;
 import net.minecraft.client.resources.language.I18n;
 
 public enum FeatureCategory {
+    CHAT,
     UNCATEGORIZED,
     INVENTORY,
     MAP,

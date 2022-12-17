@@ -9,7 +9,7 @@ import com.wynntils.core.chat.RecipientType;
 import com.wynntils.core.chat.tabs.ChatTab;
 import com.wynntils.core.managers.Managers;
 import com.wynntils.core.managers.Models;
-import com.wynntils.features.user.ChatTabsFeature;
+import com.wynntils.features.user.chat.ChatTabsFeature;
 import com.wynntils.gui.render.FontRenderer;
 import com.wynntils.gui.render.HorizontalAlignment;
 import com.wynntils.gui.render.VerticalAlignment;
