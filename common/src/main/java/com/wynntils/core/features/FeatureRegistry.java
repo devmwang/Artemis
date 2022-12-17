@@ -63,6 +63,7 @@ import com.wynntils.features.user.WynncraftPauseScreenFeature;
 import com.wynntils.features.user.WynntilsQuestBookFeature;
 import com.wynntils.features.user.chat.ChatCoordinatesFeature;
 import com.wynntils.features.user.chat.ChatItemFeature;
+import com.wynntils.features.user.chat.ChatMessageRepetitionMergerFeature;
 import com.wynntils.features.user.chat.ChatTabsFeature;
 import com.wynntils.features.user.chat.ChatTimestampFeature;
 import com.wynntils.features.user.inventory.AbilityTreeScrollFeature;
@@ -134,6 +135,7 @@ public final class FeatureRegistry {
         registerFeature(new BombBellTrackingFeature());
         registerFeature(new ChatCoordinatesFeature());
         registerFeature(new ChatItemFeature());
+        registerFeature(new ChatMessageRepetitionMergerFeature());
         registerFeature(new ChatRedirectFeature());
         registerFeature(new ChatTabsFeature());
         registerFeature(new ChatTimestampFeature());

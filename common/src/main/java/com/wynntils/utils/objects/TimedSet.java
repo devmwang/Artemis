@@ -37,6 +37,13 @@ public class TimedSet<T> implements Iterable<T> {
         ENTRIES.add(new TimedEntry(entry, System.currentTimeMillis() + timeJump));
     }
 
+    public void resetTimerFor(T entry) {
+        ENTRIES.stream()
+                .filter(timedEntry -> timedEntry.getEntry().equals(entry))
+                .findFirst()
+                .ifPresent(timedEntry -> timedEntry.setExpiration(System.currentTimeMillis() + timeJump));
+    }
+
     public void clear() {
         ENTRIES.clear();
     }
@@ -79,6 +86,10 @@ public class TimedSet<T> implements Iterable<T> {
 
         public long getExpiration() {
             return expiration;
+        }
+
+        public void setExpiration(long expiration) {
+            this.expiration = expiration;
         }
 
         public T getEntry() {

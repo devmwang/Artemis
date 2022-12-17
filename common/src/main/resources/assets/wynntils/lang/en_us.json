@@ -33,6 +33,7 @@
   "feature.wynntils.bombBellTracking.name": "Bomb Bell Tracking",
   "feature.wynntils.chatCoordinates.name": "Chat Coordinates",
   "feature.wynntils.chatItem.name": "Chat Item",
+  "feature.wynntils.chatMessageRepetitionMerger.name": "Chat Repetition Merger",
   "feature.wynntils.chatRedirect.craftedDurability.description": "How should crafted item durability messages appear?",
   "feature.wynntils.chatRedirect.craftedDurability.name": "Crafted Durability Filtering",
   "feature.wynntils.chatRedirect.friendJoin.description": "How should friend join messages appear?",

@@ -215,6 +215,12 @@ public final class ComponentUtils {
         return split;
     }
 
+    public static boolean equals(Component originalMessage, Component original) {
+        // FIXME: This could be done with visitors
+
+        return ComponentUtils.getCoded(originalMessage).equals(ComponentUtils.getCoded(original));
+    }
+
     private static class ComponentListBuilder {
         private final List<Component> lines = new ArrayList<>();
         private MutableComponent currentLine = new TextComponent("");

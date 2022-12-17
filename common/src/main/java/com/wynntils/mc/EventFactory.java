@@ -14,6 +14,7 @@ import com.wynntils.mc.event.AddEntityLookupEvent;
 import com.wynntils.mc.event.AdvancementUpdateEvent;
 import com.wynntils.mc.event.ArmSwingEvent;
 import com.wynntils.mc.event.BossHealthUpdateEvent;
+import com.wynntils.mc.event.ChatComponentMessageAddEvent;
 import com.wynntils.mc.event.ChatPacketReceivedEvent;
 import com.wynntils.mc.event.ChatScreenKeyTypedEvent;
 import com.wynntils.mc.event.ChatSentEvent;
@@ -84,6 +85,7 @@ import java.util.UUID;
 import java.util.function.Consumer;
 import net.minecraft.client.Camera;
 import net.minecraft.client.gui.components.AbstractWidget;
+import net.minecraft.client.gui.components.ChatComponent;
 import net.minecraft.client.gui.components.LerpingBossEvent;
 import net.minecraft.client.gui.screens.PauseScreen;
 import net.minecraft.client.gui.screens.Screen;
@@ -425,6 +427,10 @@ public final class EventFactory {
 
     public static ClientsideMessageEvent onClientsideMessage(Component component) {
         return post(new ClientsideMessageEvent(component));
+    }
+
+    public static ChatComponentMessageAddEvent onChatComponentMessageAdd(ChatComponent chat, Component component) {
+        return post(new ChatComponentMessageAddEvent(chat, component));
     }
 
     // endregion
